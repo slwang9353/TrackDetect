@@ -1,8 +1,5 @@
 from model import *
 
-# 输入的每一个小段的测量点数=Tokens数量，tokens数量固定，根据tokens数量决定要划分多少个小段
-# 小段数量 = 测量点总数/固定的tokens数量， 根据病害分布确定tokens数量，预先定义为M
-# 每多少个点，做一次检测
 class ModelGenerator():
     def __init__(self, row_per_detect, num_event, num_tokens):
         super(ModelGenerator, self).__init__()
